@@ -11,7 +11,4 @@ class localmail::install {
 
   preseed_package {'postfix': ensure => 'present', module => 'localmail' }
 
-  file { '/var/local/preseed':
-    ensure  => 'directory',
-  }
 }
